@@ -1,0 +1,14 @@
+[
+  {
+      "Id": "Menu1",
+      "menuName": "帳務查詢"
+  },
+  {
+      "Id": "Menu2",
+      "menuName": "繳費/分期"
+  },
+  {
+      "Id": "Menu3",
+      "menuName": "客服即時<br/>通專員"
+  }
+]

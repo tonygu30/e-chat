@@ -1,0 +1,59 @@
+[
+  {
+    "Id" : "Item01",
+    "link": "",
+    "talk" : "查詢我的本期帳單應繳金額及繳款日",
+    "citiTalk": ["好的，這是您名下所有信用卡的帳務資訊"],
+    "content": "<div class='card_box'><h3>VISA卡卡號末4碼8899</h3><div class='card_list'><div class='card_item'><span>本期帳單總金額為</span><span>$12,522元</span><br class='clear'></div><div class='card_item'><span>最低應繳金額為</span><span>$1,252元</span><br class='clear'></div></div><div class='card_list'><div class='card_item'><span>繳款截止日為</span><span>2017年07月15日</span><br class='clear'></div></div><div class='card_list'><div class='card_item'><span>目前已使用的額度為 </span><span>$85,300元</span><br class='clear'></div><div class='card_item'><span>可用額度尚有</span><span>$34,700</span><br class='clear'></div></div></div><div class='card_box'><h3>Master卡卡號末4碼1234</h3><div class='card_list'><div class='card_item'><span>本期帳單總金額為</span><span>$9,002元</span><br class='clear'></div><div class='card_item'><span>最低應繳金額為</span><span>$1,000元</span><br class='clear'></div></div><div class='card_list'><div class='card_item'><span>繳款截止日為</span><span>2017年07月20日</span><br class='clear'></div></div><div class='card_list'><div class='card_item'><span>目前已使用的額度為 </span><span>$15,000元</span><br class='clear'></div><div class='card_item'><span>可用額度尚有</span><span>$85,000</span><br class='clear'></div></div></div>"
+
+  },
+  {
+    "Id" : "Item02",
+    "link": "",
+    "talk" : "查詢我的可用額度",
+    "citiTalk": ["好的，這是您名下所有信用卡的可用額度"],
+    "content": "<div class='card_box'><h3>VISA卡卡號末4碼8899</h3><div class='card_list'><div class='card_item'><span>目前已使用的額度為</span><span>$85,300元</span><br class='clear'></div><div class='card_item'><span>可用額度尚有</span><span>$34,700</span><br class='clear'></div></div></div><div class='card_box'><h3>Master卡卡號末4碼1234</h3><div class='card_list'><div class='card_item'><span>目前已使用的額度為</span><span>$15,000元</span><br class='clear'></div><div class='card_item'><span>可用額度尚有</span><span>$85,000</span><br class='clear'></div></div></div>"
+  },
+  {
+    "Id" : "Item03",
+    "link": "",
+    "talk" : "查詢我的未出帳交易明細",
+    "citiTalk": ["好的，這是您名下所有信用卡的未出帳交易"],
+    "content": "<div class='card_box'><h3>VISA卡卡號末4碼8899</h3><div class='card_list'><div class='card_item c_color'> 未出帳交易明細如下</div></div><div class='card_list'><div class='card_item'> <span><b>5/8</b>目前已使用的額度為</span><span>$85,000元</span><br class='clear'></div><div class='card_item'> <span><b>5/8</b>目前已使用的額度為</span><span>$85,000元</span><br class='clear'></div><div class='card_item'> <span><b>5/8</b>目前已使用的額度為</span><span>$85,000元</span><br class='clear'></div></div></div>"
+  },
+  {
+    "Id" : "Item04",
+    "link": "",
+    "talk" : "請補寄我的電子月結單",
+    "citiTalk": ["好的，立刻為您補寄名下所有信用卡電子月結單"],
+    "content": "<div class='card_box'><h3>VISA卡卡號末4碼8899</h3><div class='card_list'><div class='card_item'>本期結帳日01月20日的電子月結單,預計10分鐘內補發到您留存在花旗的電子信箱。</div></div></div><div class='card_box'><h3>Master卡卡號末4碼1234</h3><div class='card_list'><div class='card_item'>本期結帳日01月20日的電子月結單,預計10分鐘內補發到您留存在花旗的電子信箱。</div></div></div>"
+  },
+  {
+    "Id" : "Item05",
+    "link": "index.html",
+    "talk" : "",
+    "citiTalk": [],
+    "content": ""
+  },
+  {
+    "Id" : "Item06",
+    "link": "index.html",
+    "talk" : "",
+    "citiTalk": [],
+    "content": ""
+  },
+  {
+    "Id" : "Item07",
+    "link": "",
+    "talk" : "我想用ATM繳信用卡費/貸款",
+    "citiTalk": ["好的，以下為使用ATM繳費方式","1.請準備好您的金融卡<br/>2.選擇「繳費」功能<br/>3.輸入花旗銀行代碼 : 021<br/>4.繳款帳號 (信用卡/大來卡號/貸款還款帳號)<br/>5.欲繳金額<br/>「轉帳」功能：每日上限新台幣三萬元「繳費」功能：不受每日轉帳金額三萬上限之限制。<br/>入帳時間：營業日15: 30前繳款/次日入帳<br/>手續費：依各銀行規定收取<br/>"],
+    "content": ""
+  },
+  {
+    "Id" : "Item08",
+    "link": "index.html",
+    "talk" : "",
+    "citiTalk": [],
+    "content": ""
+  }
+]

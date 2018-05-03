@@ -1,0 +1,492 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+
+body,html
+	font-family: 'Noto Sans TC', sans-serif ,"微軟正黑體"
+	width: 100%
+	position: relative
+	margin: 0 auto
+	overflow-x: hidden
+
+*
+	-webkit-appearance: none
+
+
+
+.alert_bg
+	position: absolute
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,.8)
+	z-index: 5555
+	text-align: center
+	display: none
+	&:after
+		content: ''
+		height: 100%
+		vertical-align: middle
+		display: inline-block
+	.mg_box
+		position: fixed
+		width: 415px
+		background: #fff
+		display: inline-block
+		top: 50%
+		left: 50%
+		margin-left: -207px
+		margin-top: -82px
+		.message
+			width: 100%
+			padding: 30px 15px
+			box-sizing: border-box
+			color: #7f7f7f
+		a
+			width: 50%
+			display: block
+			float: left
+			background: #fff
+			text-decoration: none
+			color: #333333
+			border-top: 1px solid #dedede
+			padding: 15px 0px
+			color: #0076c0
+			&:nth-of-type(2)
+				background: #0076c0
+				color: #fff
+			
+
+.app
+	width: 768px
+	margin: 0 auto
+	min-height: 100vh
+	background: #fff
+	border: 1px solid #dedede
+	position: relative
+
+
+.t_height
+	height: 55px
+	z-index: -100
+	position: fixed
+
+.d_height
+	height: 0px
+	z-index: -100
+	position: fixed
+
+header
+	height: 60px
+	width: 100%
+	background: #009dd7
+	background: -moz-linear-gradient(top, #009dd7 0%, #00548b 100%)
+	background: -webkit-linear-gradient(top, #009dd7 0%,#00548b 100%)
+	background: linear-gradient(to bottom, #009dd7 0%,#00548b 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009dd7', endColorstr='#00548b',GradientType=0 )
+	text-align: center
+	position: relative
+
+.loading
+	width: 50px
+
+.massage_box
+	min-height: 100%
+	position: relative
+	&.add
+		padding-bottom: 240px
+	&.talk
+		padding-bottom: 100px
+
+.logo
+	margin-top: 10px
+
+.back_btn
+	position: absolute
+	top: 10px
+	left: 10px
+	width: 39px
+	height: 39px
+	border-radius: 39px
+	border: 1px solid #fff
+	background: url(../images/header-Back.png) no-repeat 50% 50%
+	cursor: pointer
+
+nav.massage_menu
+	width: 768px
+	position: fixed
+	bottom: 0px
+	left: 50%
+	margin-left: -384px
+	background: rgba(250,250,250,0.9)
+	border-top: 1px solid rgb(204,204,204)
+	ul
+		width: 100%
+		margin: 0 auto
+		height: 49px
+		padding: 0px
+		display: table
+		border-collapse: collapse
+		li
+			width: 33.333333333333333%
+			float: left
+			display: block
+			height: 49px
+			text-align: center
+			display: table-cell
+			&:nth-of-type(1)
+				div
+					height: 49px
+					line-height: 49px
+					margin-top: 0px
+			&:nth-of-type(2)
+				div
+					height: 49px
+					line-height: 49px
+					margin-top: 0px
+					background: url(../images/item2_blue.png) no-repeat left center
+			&:nth-of-type(3)
+				div
+					line-height: 130%
+					margin-top: 9px
+					background: url(../images/item3_blue.png) no-repeat left center
+			div
+				display: inline-block
+				text-align: left
+				padding-left: 48px
+				background: url(../images/item1_blue.png) no-repeat 5px 50%
+				font-size: 13px
+				margin-top: 5px
+				cursor: pointer
+				box-sizing: border-box
+				
+
+#massage_view
+	width: 100%
+	position: relative
+	min-height: 100vh
+	top: 0px
+	
+
+.massage_info_box
+	padding: 7px 0px
+	display: none
+
+.good_btn
+	width: 48px
+	height: 33px
+	background: url(../images/item4_gray.png) no-repeat 50% 50%
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	&.like
+		background: url(../images/item4_blue.png) no-repeat 50% 50%
+
+.submit
+	width: 52px
+	height: 38px
+	color: #fff
+	background: #0076c0
+	display: inline-block
+	vertical-align: middle
+	border: 0px
+	border-radius: 4px
+	margin-left: 2px
+	font-family: 'Noto Sans TC', sans-serif ,"微軟正黑體"
+	margin-right: -4px
+
+.infotext
+	border: 1px solid #dedede
+	height: 30px
+	display: inline-block
+	vertical-align: middle
+	width: calc(100% - 130px)
+	font-size: 16px
+	font-family: 'Noto Sans TC', sans-serif ,"微軟正黑體"
+
+.tt_box
+	&.citi
+		animation-name: example2
+		animation-duration: .5s
+	&.me
+		text-align: right
+		transition: all .8s 1s
+		.talk_big_box
+			&::after
+				left: 0px
+				right: inherit
+			.talk_box
+				border-radius: 20px 0px 20px 20px
+				margin: 0px 15px 5px 0px
+				background: rgb(230,230,230)
+
+				&::before
+					display: none
+	&.hide
+		opacity: 0
+
+.talk_big_box
+	display: inline-block
+	position: relative
+	max-width: 60%
+	margin-bottom: 15px
+	padding-bottom: 10px
+	&::after
+		content: attr(data-time)
+		font-size: 12px
+		color: rgb(168,168,168)
+		position: absolute
+		bottom: -5px
+		right: 0px
+
+
+.card_box
+	max-width: 300px
+	min-width: 265px
+	margin: 0px 0px 6px 74px
+	border: 1px solid rgb(223,223,223)
+	border-radius: 0px 20px 20px 20px
+	padding-bottom: 15px
+	color: rgb(40,40,40)
+	h3
+		font-size: 15px
+		margin: 0px
+		color: #fff
+		padding: 13px 16px
+		background: #04a7db
+		background: -moz-linear-gradient(top, #04a7db 0%, #1775c5 100%)
+		background: -webkit-linear-gradient(top, #04a7db 0%,#1775c5 100%)
+		background: linear-gradient(to bottom, #04a7db 0%,#1775c5 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04a7db', endColorstr='#1775c5',GradientType=0 )
+		border-radius: 0px 20px 0px 0px
+	.card_list
+		width: 100%
+		font-size: 14px
+		padding: 8px 14px
+		box-sizing: border-box
+		border-top: 1px solid rgb(223,223,223)
+		&:nth-of-type(1)
+			border-top: 0px
+		.card_item
+			line-height: 160%
+			&.c_color
+				color: rgb(147,147,147)
+			padding: 2px 0px
+			span
+				display: block
+				float: left
+				width: 50%
+				b
+					display: inline-block
+					padding-right: 5px
+				&:nth-of-type(1)
+					width: 65%
+					text-align: left
+				&:nth-of-type(2)
+					width: 35%
+					text-align: right
+
+.clear
+	clear: both
+
+.talk_box
+	font-size: 14px
+	padding: 15px 17px
+	color: rgb(30,30,30)
+	background: rgb(199,236,252)
+	border-radius: 0px 20px 20px 20px
+	display: inline-block
+	margin: 15px 0px 5px 74px
+	line-height: 160%
+	position: relative
+	min-width: 22px
+	&::before
+		content: ""
+		width: 44px
+		height: 44px
+		overflow: hidden
+		border-radius: 44px
+		background: url(../images/icon_servicerL.png)
+		display: block
+		top: 0px
+		left: -59px
+		position: absolute
+	&.miss
+		margin-top: 0px
+		&:nth-of-type(1)
+			margin: 15px 0px 5px 74px
+			&::before
+				background: url(../images/icon_servicerM.png)
+		&::before
+			background: none
+
+.tt_box
+	width: 100%
+
+.menu_ch
+	width: 100%
+	text-align: center
+	position: absolute
+	bottom: 55px
+	div
+		width: calc(50% - 24px)
+		display: inline-block
+		font-size: 16px
+		color: rgb(0,111,185)
+		margin: 5px
+		border: 1px solid rgba(204,204,204,0.8)
+		padding: 11px 0px
+		border-radius: 7px
+		cursor: pointer
+		transition: all 1s
+		position: relative
+		&.active
+			position: absolute
+			color: rgb(30,30,30)
+			width: auto
+			padding: 20px
+			background: rgb(230,230,230)
+			border: none
+
+
+.menu_load
+	position: fixed
+	text-align: center
+	padding: 11px 0px
+	background: #fff
+	border: 1px solid rgba(204,204,204,0.8)
+	color: rgb(0,111,185)
+	border-radius: 7px
+	cursor: pointer
+	transition: all .5s
+	animation-name: example
+	animation-duration: .5s
+	&.active
+		position: fixed
+		color: rgb(30,30,30)
+		width: auto
+		padding: 15px 17px
+		font-size: 14px
+		background: rgb(230,230,230)
+		border: none
+		border-radius: 20px 0px 20px 20px
+		line-height: 160%
+
+
+@keyframes example
+	from
+		opacity: 0
+		transform: translateY(20px)
+	to
+		opacity: 1
+		transform: translateY(0px)
+
+
+
+@keyframes example2
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+
+.warring_txt
+	width: 100%
+	box-sizing: border-box
+	padding: 20px
+	font-size: 13px
+	color: rgb(74,74,74)
+	background: rgb(199,236,252)
+	position: relative
+	line-height: 160%
+	.close
+		position: absolute
+		width: 10px
+		height: 10px
+		right: 5px
+		top: 5px
+		cursor: pointer
+		&::before,&::after
+			content: ''
+			width: 10px
+			height: 1px
+			background: rgb(74,74,74)
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: rotate(45deg)
+			display: block
+			margin-left: -5px
+		&::after
+			transform: rotate(-45deg)
+
+
+
+
+
+@media screen and (max-width: 768px)
+	*::-webkit-scrollbar
+		display: none
+
+	.menu_load
+		position: fixed
+
+
+	nav.massage_menu
+		width: 100%
+		left: 0px
+		margin-left: 0px
+
+	.app
+		width: 100%
+
+	.talk_big_box
+		max-width: 80%
+
+
+@media screen and (max-width: 480px)
+
+
+	.alert_bg
+		&:after
+		.mg_box
+			width: 94%
+			font-size: 14px
+			margin-left: -47%
+			mar
+			.message
+			a
+				&:nth-of-type(2)
+	.none_m
+		display: none
+
+
+	.talk_big_box
+		max-width: 95%
+
+	.card_box
+		min-width: 230px
+
+	.menu_load
+		font-size: 14px
+
+	.card_box
+		.card_list
+			font-size: 12px
+			padding: 4px 8px
+
+	.talk_box
+
+
+	.card_box
+		h3
+			font-size: 14px
+
+
+	.d_height
+		height: 60px
+
+
+
+@media screen and (max-width: 320px)
+	.d_height
+		height: 75px
+
+

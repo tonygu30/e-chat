@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+<body>
+
+    <div class='alert_bg'>
+        <div class='mg_box'>
+            <div class='message'>
+                您即將離開花旗行動生活家並開啟手機瀏覽器。<br class='none_m'/>請問您要繼續嗎?
+            </div>
+            <a href="javascript:;" class='close_alert'>取消</a>
+            <a href="http://www.yahoo.com.tw" target="_blank">確定</a>
+        </div>
+    </div>
+
+    <div class='app'>
+        <div id='massage_view'>
+            <div class='massage_box'>
+<!--                 <header>
+                    <div class='back_btn'>
+                    </div>
+                    <img src="images/header-logo.png" class='logo'>
+                </header> -->
+                <div class='t_height'></div>
+                <div class='d_height'></div>
+                <div class='warring_txt'>
+                    安全提示：為維護個人資料安全，請勿於花旗客服即時通的頁面揭露您的個人資料（例如：信用卡卡號/密碼/識別碼/電話...等）
+                    <div class='close'></div>
+                </div>
+                <div class='tt_box'>
+                    <div class="talk_big_box" data-time="2/26 13:52:56">
+                        <div class="talk_box">歡迎使用花旗客服即時通， 請直接在下方選單點擊您所需要的服務，快速又方便。</div>
+                    </div>
+                </div>
+                <br class='clear'>
+            </div>
+        </div>
+        <nav class='massage_menu'>
+            <div class='massage_info_box'>
+                <form>
+                    <div class='good_btn like'></div>
+                    <input type="input" name="" class='infotext'>
+                    <input type="button" class='submit' value="確認">
+                </form>
+            </div>
+        </nav>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+<script type="text/javascript" src='js/main.js'></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', ready, false);
+
+document.addEventListener('touchmove', function(ev) {
+    ev.preventDefault();
+}, false);
+
+function ready() {
+    document.querySelector('body').addEventListener('touchmove', function(ev) {
+        ev.stopPropagation();
+    }, false);
+}
+</script>
+
+
+</html>

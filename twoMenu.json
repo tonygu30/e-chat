@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "Item01",
+    "Pid": "Menu1",
+    "name":"本期應繳金額/繳款日"
+  },
+  {
+    "Id": "Item02",
+    "Pid": "Menu1",
+    "name":"可用額度"
+  },
+  {
+    "Id": "Item03",
+    "Pid": "Menu1",
+    "name":"未出帳交易明細"
+  },
+  {
+    "Id": "Item04",
+    "Pid": "Menu1",
+    "name":"補寄電子月結單"
+  },
+  {
+    "Id": "Item05",
+    "Pid": "Menu2",
+    "name":"他行帳戶繳卡費/貸款"
+  },
+  {
+    "Id": "Item06",
+    "Pid": "Menu2",
+    "name":"花旗存戶繳卡費/貸款"
+  },
+  {
+    "Id": "Item07",
+    "Pid": "Menu2",
+    "name":"ATM繳費方式說明"
+  },
+  {
+    "Id": "Item08",
+    "Pid": "Menu2",
+    "name":"我要辦帳單分期"
+  }
+]
